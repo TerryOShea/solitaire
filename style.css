@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.deck {
+  box-sizing: border-box;
+  margin: 20px 5.5vw;
+  position: relative;
+  min-height: 60vw;
+}
+
+.card {
+  width: 11vw;
+  height: 15vw;
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid black;
+  position: absolute;
+}
+
+.cardback, .cardfront {
+  width: 100%;
+  height: 100%;
+}
+
+.cardfront {
+  font: 2vw 'Roboto', sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.value-top-left, .value-bottom-right {
+  position: absolute;
+  text-align: center;
+}
+
+.value-top-left {
+  top: 4%;
+  left: 4%;
+}
+
+.value-bottom-right {
+  bottom: 4%;
+  right: 4%;
+  transform: rotate(180deg);
+}
+
+.cardIcon, .bigCardIcon {
+  position: relative;
+  overflow: hidden;
+}
+
+.cardIcon {
+  width: 1.5vw;
+  height: 1.5vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.bigCardIcon {
+  width: 2.5vw;
+  height: 2.5vw;
+  margin: 0 0.2vw;
+}
+
+.iconImage {
+  width: 3vw;
+  height: 3vw;
+}
+
+.bigIconImage {
+  width: 5vw;
+  height: 5vw;
+}
+
+.cardCenter {
+  width: 7vw;
+  height: 14vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
